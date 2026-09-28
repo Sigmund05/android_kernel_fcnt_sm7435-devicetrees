@@ -420,6 +420,7 @@ dtbo-$(CONFIG_ARCH_PARROT) += parrot-rumi-overlay.dtbo \
 	parrot-qrd-overlay.dtbo \
 	parrot-qrd-4gb-overlay.dtbo \
 	parrot-qrd-wcn6750-overlay.dtbo \
+	parrot-qrd-wcn6750-pm8350b-overlay.dtbo \
 	parrot-qrd-wcn6750-4gb-overlay.dtbo \
 	parrot-qrd-nopmi-overlay.dtbo	\
 	parrot-qrd-pm8350b-overlay.dtbo \
@@ -447,6 +448,7 @@ parrot-idp-pm8350b-overlay.dtbo-base := parrot.dtb parrotp.dtb parrot-sg.dtb par
 parrot-qrd-overlay.dtbo-base := parrot.dtb parrotp.dtb parrot-sg.dtb parrotp-sg.dtb
 parrot-qrd-4gb-overlay.dtbo-base := parrot-4gb.dtb
 parrot-qrd-wcn6750-overlay.dtbo-base := parrot.dtb parrotp.dtb parrot-sg.dtb parrotp-sg.dtb
+parrot-qrd-wcn6750-pm8350b-overlay.dtbo-base := parrot.dtb parrotp.dtb parrot-sg.dtb parrotp-sg.dtb
 parrot-qrd-wcn6750-4gb-overlay.dtbo-base := parrot-4gb.dtb
 parrot-qrd-nopmi-overlay.dtbo-base := parrot.dtb parrotp.dtb parrot-sg.dtb parrotp-sg.dtb
 parrot-qrd-pm8350b-overlay.dtbo-base := parrot.dtb parrotp.dtb parrot-sg.dtb parrotp-sg.dtb
@@ -473,6 +475,7 @@ dtb-$(CONFIG_ARCH_PARROT) += parrot-rumi.dtb \
 	parrot-qrd.dtb \
 	parrot-qrd-4gb.dtb \
 	parrot-qrd-wcn6750.dtb \
+	parrot-qrd-wcn6750-pm8350b.dtb \
 	parrot-qrd-wcn6750-4gb.dtb \
 	parrot-qrd-nopmi.dtb \
 	parrot-qrd-pm8350b.dtb \
