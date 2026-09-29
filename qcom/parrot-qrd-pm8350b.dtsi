@@ -5,6 +5,113 @@
 	qcom,pmic-id = <0x0 0x0 0x0 0x32 0x0 0x0 0x0 0x0 0x0>;
 };
 
+&pm8350b_haptics {
+	qcom,vmax-mv = <2545>;
+	qcom,lra-period-us = <4878>;
+	status = "ok";
+
+	effect_0 {
+		/* CLICK */
+		qcom,wf-vmax-mv = <3700>;
+		qcom,wf-pattern-data =  <0x0ff  S_PERIOD_T_LRA_X_2  0>,
+					<0x100  S_PERIOD_T_LRA  0>,
+					<0x173  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>;
+		qcom,wf-pattern-period-us = <4878>;
+	};
+
+	effect_1 {
+		/* DOUBLE_CLICK */
+		qcom,wf-vmax-mv = <3700>;
+		qcom,wf-pattern-data =  <0x0ff  S_PERIOD_T_LRA  0>,
+					<0x0ff  S_PERIOD_T_LRA_DIV_2  0>,
+					<0x100  S_PERIOD_T_LRA  0>,
+					<0x173  S_PERIOD_T_LRA_DIV_2  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>;
+		qcom,wf-pattern-period-us = <4878>;
+	};
+
+	effect_2 {
+		/* TICK */
+		qcom,wf-vmax-mv = <3700>;
+		qcom,wf-pattern-data =  <0x0ff  S_PERIOD_T_LRA  0>,
+					<0x0ff  S_PERIOD_T_LRA_DIV_2  0>,
+					<0x100  S_PERIOD_T_LRA  0>,
+					<0x173  S_PERIOD_T_LRA_DIV_2  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>;
+		qcom,wf-pattern-period-us = <4878>;
+	};
+
+	effect_3 {
+		/* THUD */
+		qcom,wf-vmax-mv = <3700>;
+		qcom,wf-pattern-data =  <0x0ff  S_PERIOD_T_LRA_X_2  0>,
+					<0x100  S_PERIOD_T_LRA  0>,
+					<0x14c  S_PERIOD_T_LRA  0>,
+					<0x184  S_PERIOD_T_LRA  0>,
+					<0x1ad  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>;
+		qcom,wf-pattern-period-us = <4878>;
+	};
+
+	effect_4 {
+		/* POP */
+		qcom,wf-vmax-mv = <3700>;
+		qcom,wf-pattern-data =  <0x0ff  S_PERIOD_T_LRA_X_2  0>,
+					<0x100  S_PERIOD_T_LRA  0>,
+					<0x14c  S_PERIOD_T_LRA  0>,
+					<0x184  S_PERIOD_T_LRA  0>,
+					<0x1ad  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>;
+		qcom,wf-pattern-period-us = <4878>;
+	};
+
+	effect_5 {
+		/* HEAVY CLICK */
+		qcom,wf-vmax-mv = <4200>;
+		qcom,wf-pattern-data =  <0x0ff  S_PERIOD_T_LRA_X_2  0>,
+					<0x0ff  S_PERIOD_T_LRA_DIV_2  0>,
+					<0x100  S_PERIOD_T_LRA  0>,
+					<0x120  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>;
+		qcom,wf-pattern-period-us = <4878>;
+	};
+
+	effect_21 {
+		/* TEXTURE_TICK */
+		qcom,effect-id = <21>;
+		qcom,wf-vmax-mv = <3000>;
+		qcom,wf-pattern-data =  <0x0ff  S_PERIOD_T_LRA  0>,
+					<0x0ff  S_PERIOD_T_LRA_DIV_2  0>,
+					<0x100  S_PERIOD_T_LRA  0>,
+					<0x173  S_PERIOD_T_LRA_DIV_2  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>,
+					<0x000  S_PERIOD_T_LRA  0>;
+		qcom,wf-pattern-period-us = <4878>;
+		qcom,wf-brake-pattern = /bits/ 8 <0x0 0x0 0x0>;
+		qcom,wf-auto-res-disable;
+	};
+};
+
 &battery_charger {
 	qcom,thermal-mitigation-step = <500000>;
 };
