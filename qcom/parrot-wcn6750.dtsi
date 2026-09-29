@@ -147,7 +147,7 @@
 	nq@64 {
 		compatible = "rtc6226";
 		reg = <0x64>;
-		fmint-gpio = <&tlmm 105 0>;
+		fmint-gpio = <&tlmm 103 0>;
 		vdd-supply = <&L5E>;
 		rtc6226,vdd-supply-voltage = <2800000 2800000>;
 		rtc6226,vdd-load = <15000>;
