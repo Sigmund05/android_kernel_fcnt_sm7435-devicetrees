@@ -223,7 +223,7 @@
 	goodix-berlin@0 {
 		compatible = "goodix,gt9916S";
 		reg = <0>;
-		spi-max-frequency = <1000000>;
+		spi-max-frequency = <15000000>;
 
 		interrupt-parent = <&tlmm>;
 		interrupts = <65 0x2008>;
