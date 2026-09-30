@@ -593,7 +593,7 @@
 		regulator-min-microvolt = <1800000>;
 		regulator-max-microvolt = <1800000>;
 		regulator-enable-ramp-delay = <233>;
-		gpio = <&pm6150l_gpios 9 0>;
+		gpio = <&pm6150l_gpios 9 1>;
 		enable-active-high;
 		regulator-boot-on;
 		proxy-supply = <&display_panel_vddio>;
