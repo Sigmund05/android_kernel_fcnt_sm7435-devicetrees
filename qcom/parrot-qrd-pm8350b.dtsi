@@ -107,6 +107,8 @@
 	dwc3@a600000 {
 		usb-role-switch;
 		dr_mode = "otg";
+		snps,usb2-gadget-lpm-disable;
+		snps,usb2-lpm-disable;
 	};
 
 	port {
